@@ -7,18 +7,18 @@ const Player = (props) => {
       <div>
         <div className="pull-left">
           <button className="btn btn-default">
-            <span className="glyphicon glyphicon-step-backward"></span>
+            <span className="glyphicon glyphicon-step-backward" />
           </button>
           <button className="btn btn-default">
-            <span className="glyphicon glyphicon-play"></span>
+            <span className="glyphicon glyphicon-play" />
           </button>
           <button className="btn btn-default">
-            <span className="glyphicon glyphicon-step-forward"></span>
+            <span className="glyphicon glyphicon-step-forward" />
           </button>
         </div>
         <div className="bar">
           <div className="progress">
-            <div className="progress-bar"></div>
+            <div className="progress-bar" />
           </div>
         </div>
       </div>
