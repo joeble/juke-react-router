@@ -4,11 +4,14 @@ import AllAlbums from './AllAlbums';
 import SingleAlbum from './SingleAlbum';
 import Sidebar from './Sidebar';
 import Player from './Player';
+import AllArtists from './AllArtists';
+import SingleArtist from './SingleArtist';
 
 export default class Main extends Component {
 
   constructor (props) {
     super(props);
+    this.state = {}
   }
 
   render () {
@@ -22,6 +25,8 @@ export default class Main extends Component {
             <Route exact path="/" component={AllAlbums} />
             <Route exact path="/albums" component={AllAlbums} />
             <Route path="/albums/:albumId" component={SingleAlbum} />
+            <Route exact path="/artists" component={AllArtists} />
+            <Route path="/artists/:artistId" component={SingleArtist} />
           </div>
           <Player />
         </div>
